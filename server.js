@@ -10,7 +10,7 @@ var ArticleOne={
     heading:"Article One",
     date: "14 feb 2018 ",
     content: 
-    { 
+    `
         <div>
         <p>
             Hello Everyone , Welcome to my first article page. Hope you love reading it.
@@ -23,13 +23,13 @@ var ArticleOne={
             Love Riddhi
         </p>
         </div>
-    }
+    `
 };
 function createTemplate (data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
-var html|template='
+var htmlTemplate=`
 <html>
     <head>
         <title>
@@ -54,7 +54,7 @@ var html|template='
         </div>
     </body>
 </html>
-';
+`;
 return html|Template;
 }
 app.get('/', function (req, res) {
