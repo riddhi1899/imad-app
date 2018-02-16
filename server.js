@@ -8,9 +8,10 @@ app.use(morgan('combined'));
 var ArticleOne={
     title:"Article One | Riddhi Chauhan",
     heading:"Article One",
-    date: "14 feb 2018 "
+    date: "14 feb 2018 ",
     content: 
-    {
+    { 
+        <div>
         <p>
             Hello Everyone , Welcome to my first article page. Hope you love reading it.
         </p>
@@ -21,6 +22,7 @@ var ArticleOne={
             Have a great day ahead!
             Love Riddhi
         </p>
+        </div>
     }
 };
 function createTemplate (data){
