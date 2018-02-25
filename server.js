@@ -75,9 +75,10 @@ app.get('/test-db',function(req, res){
    //make a select reques
    //return the data
    pool.query('SELECT * FROM test',function(err,result){
-       if(err){
+       if (err){
            res.status(500).send(err.toString());
        }
+       res.send(JSON.stringify(result));
    })
 });
 
